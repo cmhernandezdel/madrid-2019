@@ -9,7 +9,7 @@ stopwords = ['a', 'ante', 'bajo', 'cabe', 'con', 'contra', 'de', 'desde', 'en',
 
 # Read file and send every line to parse
 def read_file(input_file):
-  with open(input_file, "r") as file_stream:
+  with open(input_file, encoding="latin-1") as file_stream:
     for line in file_stream:
       line = line.strip()
       token = line.split(" ")
